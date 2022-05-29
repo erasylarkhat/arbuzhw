@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/choosin_back"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:id="@+id/linear1"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/coltv"
+            android:text="Column number"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:background="#D9D9D9"
+            android:layout_width="520px"
+            android:layout_height="130px"/>
+
+        <EditText
+            android:id="@+id/colet"
+            android:layout_marginLeft="50dp"
+            android:layout_width="320px"
+            android:layout_height="130px"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:id="@+id/linear2"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/linear1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/rowtv"
+            android:textAlignment="center"
+            android:text="Row number"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:background="#D9D9D9"
+            android:layout_width="520px"
+            android:layout_height="130px"/>
+
+        <EditText
+            android:id="@+id/rowet"
+            android:layout_marginLeft="50dp"
+            android:layout_width="320px"
+            android:layout_height="130px"/>
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/btn_checker"
+        android:layout_below="@+id/linear2"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:text="Check this waterelon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/numtv"
+            android:layout_below="@id/btn_checker"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="Amount number: 1"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:background="#D9D9D9"
+            android:layout_width="650px"
+            android:layout_height="130px"/>
+
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/numtv"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:text="Delete"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_add"
+            android:text="Add"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_accept"
+        android:text="Accept"
+        android:layout_below="@id/linear3"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

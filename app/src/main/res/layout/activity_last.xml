@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LastActivity">
+
+    <TextView
+        android:id="@+id/res"
+        android:layout_width="wrap_content"
+        android:text="Your order"
+        android:layout_centerHorizontal="true"
+        android:textSize="50sp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/rowcol"
+        android:layout_below="@+id/res"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:text="Row and col:"
+        android:layout_marginTop="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/amount"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/rowcol"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:text="Total amount: "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/numbers"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/amount"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:text="Your phone number: "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

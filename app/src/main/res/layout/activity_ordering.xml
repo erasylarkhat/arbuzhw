@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/main_yellow_color"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+  <androidx.constraintlayout.utils.widget.MotionLabel
+      android:layout_centerHorizontal="true"
+      android:id="@+id/label1"
+      android:layout_marginTop="50dp"
+      android:text="Enter address"
+      android:textSize="30sp"
+      android:textColor="@color/black"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+
+  <EditText
+      android:id="@+id/edittext1"
+      android:layout_width="200dp"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/label1"
+      android:layout_centerHorizontal="true"
+      android:backgroundTint="@color/main_red_color" />
+
+    <androidx.constraintlayout.utils.widget.MotionLabel
+        android:layout_below="@+id/edittext1"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/label2"
+        android:text="Enter phone number"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+  <EditText
+      android:id="@+id/edittextphone"
+      android:layout_centerHorizontal="true"
+      android:layout_width="200dp"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/label2"
+      android:backgroundTint="@color/main_red_color"
+      android:inputType="phone" />
+    <androidx.constraintlayout.utils.widget.MotionLabel
+        android:layout_below="@+id/edittextphone"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/label3"
+        android:text="Select date"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+  <EditText
+      android:id="@+id/edittextdate"
+      android:layout_centerHorizontal="true"
+      android:layout_width="200dp"
+      android:hint="yyyy-MM-dd"
+      android:textColorHint="@color/white"
+      android:textSize="20sp"
+      android:textAlignment="center"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/label3"
+      android:backgroundTint="@color/main_red_color"
+      android:inputType="date" />
+
+    <Button
+        android:id="@+id/btn_finish"
+        android:layout_marginTop="30sp"
+        android:layout_below="@id/edittextdate"
+        android:layout_centerHorizontal="true"
+        android:text="Order"
+        android:textSize="35sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
